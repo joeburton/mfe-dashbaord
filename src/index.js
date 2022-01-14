@@ -6,12 +6,15 @@ const mount = (el) => {
   ReactDOM.render(<App />, el);
 };
 
-if (process.env.NODE_ENV === 'development') {
-  const devRoot = document.querySelector('#mfe_dashboard');
-  console.log(devRoot);
-  if (devRoot) {
-    mount(devRoot);
-  }
+// if (process.env.NODE_ENV === 'development') {
+// }
+
+const devRoot = document.querySelector('#mfe_dashboard');
+
+console.log(devRoot);
+
+if (devRoot) {
+  mount(devRoot);
 }
 
 export { mount };
