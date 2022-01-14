@@ -25,8 +25,6 @@ module.exports = {
       library: { type: 'var', name: 'mfe_dashboard' },
       exposes: {
         './DashboardApp': './src/index',
-        './SimpleComponent': './src/SimpleComponent',
-        './TimeNow': './src/TimeNow',
       },
     }),
     new HtmlWebpackPlugin({
