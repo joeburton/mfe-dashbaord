@@ -26,6 +26,12 @@ module.exports = {
       exposes: {
         './DashboardApp': './src/index',
       },
+      shared: [
+        {
+          react: { singleton: true, eager: true },
+          'react-dom': { singleton: true, eager: true },
+        },
+      ],
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
