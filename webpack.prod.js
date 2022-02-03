@@ -24,7 +24,7 @@ module.exports = {
       filename: 'remoteEntry.js',
       library: { type: 'var', name: 'mfe_dashboard' },
       exposes: {
-        './DashboardApp': './src/index',
+        './DashboardApp': './src/DashboardApp',
       },
       shared: [
         {
