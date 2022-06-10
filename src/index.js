@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { DashboardApp } from './DashboardApp';
+import Dashboard from './Dashboard';
 
-ReactDOM.render(<DashboardApp />, document.querySelector('#mfe_dashboard'));
+ReactDOM.render(<Dashboard />, document.querySelector('#mfe_dashboard'));

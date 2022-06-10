@@ -31,9 +31,8 @@ module.exports = {
     new ModuleFederationPlugin({
       name: 'mfe_dashboard',
       filename: 'remoteEntry.js',
-      library: { type: 'var', name: 'mfe_dashboard' },
       exposes: {
-        './DashboardApp': './src/DashboardApp',
+        './Dashboard': './src/Dashboard',
       },
       shared: [
         {
